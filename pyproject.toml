@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "threadop"
+version = "0.1.0"
+description = "Adds a threading operator to Python."
+authors = ["Bogdan Popa <popa.bogdanp@gmail.com>"]
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.5"
+flake8-quotes = "^1.0"
+isort = "^4.3"
+pytest = "^3.7"
+pytest-cov = "^2.5"
