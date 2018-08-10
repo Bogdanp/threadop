@@ -43,7 +43,6 @@ def enable_threadop(fn):
     * Requires access to functions' source code.
     """
     transformer = _ThreadopTransformer()
-    print(fn)
     tree = transformer.visit(ast.parse(dedent(inspect.getsource(fn))))
     code = compile(tree, inspect.getfile(fn), "exec")
     scope = {}
